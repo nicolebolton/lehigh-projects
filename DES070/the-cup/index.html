@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+       
+        <!--Enter your name into the TITLE text-->
+        <title>The Cup</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" type="text/css" href="styles.css"> 
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato:wght@400;700;900&family=Yellowtail&display=swap" rel="stylesheet">
+    </head> 
+
+    <body>
+        <div>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#" class="company-name">The Cup</a>
+                <a href="#flavors">Flavors</a>
+                <a href="#menus">Menu</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+                <span style="font-size:33px;cursor:pointer;padding: 30px; position: fixed;" onclick="openNav()" id="menu">&#9776;</span>
+        </div>
+        
+        
+        <div>
+            <div id="home" style="min-height: 1000px">
+                <div class="home">
+                    <h1 class="company-name">The Cup</h1>
+                    <h2>bethlehem's<br>favorite ice cream</h2>
+                </div>
+                <h3>get the scoop</h3>
+                <img src="./transitions/chevron.png"/>
+            </div>
+        </div>
+        <div class="overlay">
+            <a href="#flavors"></a>
+        </div>
+        
+        
+        <div id="flavors" style="background-color: #90ebda;" >
+            <div class="flavors">
+                <h2>seasonal scoops</h2>
+                <h3>Take a peak at what's churning</h3>
+                <div class="flavor-containers">
+                    <div class="ice-cream-container">
+                        <div class="ice-cream" >
+                            <h4>black raspberry</h4>
+                            <img id="rasp" src="./ice-creams/black-raspberry.png"/>
+                            <h3 id="rasp-dscr">we berry much believe you'll love this flavor</h3>
+                        </div>
+                        <div class="ice-cream">
+                            <h4>mint chocolate chip</h4>
+                            <img id="mint" src="./ice-creams/mint-chocolate-chip.png"/>
+                            <h3 id="mint-dscr">some things are <br> mint to be</h3>
+                        </div>
+                    </div >
+                    <div class="ice-cream-container">
+                        <div class="ice-cream">
+                            <h4>peaches & cream</h4>
+                            <img id="peach" src="./ice-creams/peaches.png"/>
+                            <h3 id="peach-dscr">made with a peach of our hearts</h3>
+                        </div>
+                        <div class="ice-cream">
+                            <h4>peanut butter swirl</h4>
+                            <img id="nut" src="./ice-creams/peanut-butter-swirl.png"/>
+                            <h3 id="nut-dscr">butter believe you'll be nuts for this one</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <img src="./transitions/drip.png" style="width:100vw; margin-top: -2px;"/>
+        <div id="menus" style="padding-top: 20px; background-color: #c9b3f4; margin-top: -15px">
+            <div class="menu">
+                <h2>our<br>legendairy menu</h2>
+                <h3>frozen treats galore.</h3>
+                <div class="menu-item-container">
+                    <div class="row-menu-items">
+                        <div class="menu-item">
+                            <h4>cups & cones</h4>
+                            <table>
+                                <tr>
+                                    <th><p>kiddie</p></th>
+                                    <th><p class="price">$2.00</p></th>
+                                </tr>
+                                <tr>
+                                    <th><p>single</p></th>
+                                    <th><p class="price">$3.50</p></th>
+                                </tr>
+                                <tr>
+                                    <th><p>double</p></th>
+                                    <th><p class="price">$4.75</p></th>
+                                </tr>
+                                <tr>
+                                    <th><p>novelty cones</p></th>
+                                    <th><p class="price">+$1.00</p></th>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="menu-item">
+                            <h4>sundaes</h4>
+                            <table>
+                                <tr>
+                                    <th><div>
+                                        <p>hot fudge</p>
+                                        <p class="descr">Your favorite ice cream topped with chocolate fudge, peanuts, whipped cream, & a cherry.</p>
+                                        </div></th>
+                                    <th><p class="price">$5.50<br><br><br><br></p></th>
+                                </tr>
+                                <tr>
+                                    <th><div>
+                                        <p>banana split</p>
+                                        <p class="descr">A traditional banana split with all the toppings–crushed cherries, strawberries, pineapples, and whipped cream.</p>
+                                        </div></th>
+                                    <th><p class="price">$8.25<br><br><br><br></p></th>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="menu-item">
+                            <h4>shakes & floats</h4>
+                            <table>
+                                <tr>
+                                    <th><p>kiddie</p></th>
+                                    <th><p class="price">$3.00</p></th>
+                                </tr>
+                                <tr>
+                                    <th><p>small</p></th>
+                                    <th><p class="price">$4.50</p></th>
+                                </tr>
+                                <tr>
+                                    <th><p>regular</p></th>
+                                    <th><p class="price">$5.75</p></th>
+                                </tr>
+                                <tr>
+                                    <th><p>large</p></th>
+                                    <th><p class="price">$6.50</p></th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row-menu-items">
+                        <div class="menu-item">
+                            <h4>flavors</h4>
+                            <h3 style="margin: 0">sweet & creamy</h3>
+                            <table class=center>
+                                <tr>
+                                        <th><p>vanilla</p></th>
+                                        <th><p>chocolate</p></th>
+                                </tr>
+                                <tr>
+                                    <th><p>strawberry</p></th>
+                                    <th><p>coffee</p></th>
+                                </tr>
+                                <tr>
+                                        <th><p>cookie dough</p></th>
+                                        <th><p>cookies n' cream</p></th>
+                                </tr>
+                                <tr>
+                                        <th><p>moose tracks</p></th>
+                                        <th><p>party cake</p></th>
+                                    
+                                </tr>
+                                <tr>
+                                    <th><p>+40 more</p></th>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="menu-item">
+                            <h4>toppings</h4>
+                            <h3 style="margin: 0">+$0.75 per topping</h3>
+                            <table class=center>
+                                <tr>
+                                        <th><p>sprinkles</p></th>
+                                        <th><p>m&m</p></th>
+                                </tr>
+                                <tr>
+                                        <th><p>oreo's</p></th>
+                                        <th><p>chocolate chips</p></th>
+                                </tr>
+                                <tr>
+                                        <th><p>gummi bears</p></th>
+                                        <th><p>reese's pieces</p></th>
+                                </tr>
+                                <tr>
+                                        <th><p>hot fudge</p></th>
+                                        <th><p>caramel</p></th>
+                                </tr>
+                                
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <img src="./transitions/wave.png" style="width:100vw; margin-top: -2px;"/>
+        <div id="about" style="background-color: #f2c1e4; margin-top: -10px; background-image: linear-gradient(to bottom, rgba(144, 235, 218, 0), rgba(144, 235, 218, 0), rgba(144, 235, 218, 0), rgba(144, 235, 218, 1) 100%);">
+            <div class="about">
+                <h2><span class="company-name" style="font-size:1.618em;">the cup</span> screams<br> for ice cream</h2>
+                <h3>over 80 years going strong</h3>
+                <div class="about-container">
+                    <div>
+                        <p>For the past 85 years, The Bethlehem Dairy Store has been a favorite of area families looking to enjoy many flavors of homemade ice cream. Back in the 1920’s and 30’s, families would line up along the outside of the store on Linden Street to watch Soap-box derby races and then head to the store for ice cream. You may hear many long-time residents refer to the store as “The Cup”, due to its original shape as a large milkshake cup. Other people may refer to the store as “Mowrer’s”, in honor of the long time ownership by the Mowrer family.</p>
+                    </div>
+                    <div style="text-align: center;">
+                         <img src="https://www.bethlehemdairystore.com/wp-content/themes/CMD/images/bg-header-2.jpg"/> 
+                    </div>
+                </div>
+                <div class="about-long">
+                        <p>For over the past 20 years, William Burkhardt and Frederick Buckenmeyer have been co-owners of the Bethlehem Dairy Store, Inc. In late August 2002, they opened an additional location on the campus of Lehigh University, in the Campus Square retail area. They also operate 3 stands at Musikfest, Bethlehem’s arts and music festival held in early August, in addition to participating in a variety of other local festivals.</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div id="contact" style="background-color: #90ebda;">
+            <div class="contact">
+                <h2>ready to get served?</h2>
+                <h3>you've only seen the tip of the ice(cream)berg.<br>come visit our shop today & choose from over 40 flavors!</h3>
+                <div class="contact-container">
+                    <div>
+                        <h2><span class="company-name">The Cup</span></h2>
+                        <h3>2 Farrington Sq.<br>
+                            Bethlehem, PA<br>
+                            610.865.4360<br>
+                        </h3>
+                        <h4>hours</h4>
+                        <h3>
+                            Mon-Fri 12PM-10PM<br>
+                            Sat-Sun 1PM-10PM<br>
+                        </h3>
+                        <a href="https://www.facebook.com/bethlehemdairystore/" target="_blank" >
+                            <img src="https://vectorified.com/images/white-facebook-icon-transparent-background-33.png" style="height:40px;"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+        function openNav() {
+            var width = screen.width;
+            if (width < 450) {
+                document.getElementById("mySidenav").style.width = "100%";
+                document.getElementById("menu").style.visibility = "hidden";
+            }
+            else if (width > 450) {
+                document.getElementById("mySidenav").style.width = "300px";
+                document.getElementById("menu").style.visibility = "hidden";
+            }
+            
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("menu").style.visibility = "visible";
+        }
+        </script>
+
+    </body>
+</html> 

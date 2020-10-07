@@ -1,0 +1,227 @@
+<!DOCTYPE html> 
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+       
+        <!--Enter your name into the TITLE text-->
+        <title>Nicole's Font Exercise</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Enter your Google Font link here-->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Marcellus&family=Questrial&family=Roboto&family=Rokkitt&family=Unna&display=swap&family=Playfair+Display&family=Josefin+Slab&family=Open+Sans&family=Questrial" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nunito:wght@600&display=swap" rel="stylesheet">
+
+        <!--This exercise will use an internal style sheet. DO NOT USE IN-LINE STYLES.  -->
+        <style>
+            body {
+                margin: 0;
+            }
+            
+            .main {         
+                width: 90%;
+                max-width: 1200px;
+                margin-right: auto;
+                margin-left: auto;
+                }
+            
+            header {
+                font-size: 120px;
+                font-family: 'Questrial';
+                margin-top: 70px;
+            }
+            
+            h1 {
+                font-family: 'Luckiest Guy', sans-serif;
+                font-size: 1.5em;
+                letter-spacing: 2px;
+                color: white;
+                margin-left: 40px;
+                margin-right: 20px;
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+            
+            
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #DB7EEB;
+                  position: -webkit-sticky; /* Safari */
+                  position: sticky;
+                  top: 0;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                font-family: 'Nunito', sans-serif;
+                letter-spacing: 1px;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 20px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                color: #8141E0;
+            }
+
+            .serif { 
+                font-family: serif;
+                background-color: rgba(255, 202, 158, 1);
+                margin-bottom: 30px;
+                padding-bottom: 10px;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            .sans {
+                font-family: sans-serif;
+                background-color: rgba(97, 223, 255, 1);
+                margin-bottom: 30px;
+                padding-bottom: 10px;
+                padding-left: 30px;
+                padding-right: 30px;
+                
+            }
+            .fontname {
+                color: white;
+                /* make size of font 120px */
+                font-size: 120px;
+            }
+            .fontfact {
+                /* make size of font 48px */
+                font-size: 48px;
+            }
+            .bottom {
+                color: white;
+            }
+            
+            /* CLASSIFICATIONS - choose a Google font representing each classification. Link the font to this HTML document. Use the regular weight (400) for each font. Declare each font using the ID below */
+            
+            #oldstyle {  /* choose from Cormorant Garamond, Poynter OS, or Alegreya*/ 
+                font-family: 'Cormorant Garamond';
+            }
+            #didone { /* choose from Unna, Cantata One, or Playfair Display*/
+                font-family: 'Playfair Display'
+            } 
+            #slab { /* choose from Rokkitt, Slabo, or Josefin Slab */
+                font-family: 'Rokkitt';
+            } 
+            #grotesque {/* choose from Roboto, Numans, or Source Sans Pro*/
+                font-family: 'Roboto';
+            }
+            #humanist { /* choose from Marcellus, Open Sans, or Fira Sans */
+                font-family: 'Marcellus';
+            }
+            #geometric { /* choose from Montserrat, Questrial, or Poppins */ 
+                font-family: 'Questrial'
+            }
+            
+        </style>
+    </head> 
+    
+
+    <body> 
+        <ul>
+            <li><h1>Nicole<br>Bolton</h1></li>
+            <li><a href="../index.html">home</a></li>
+            <li><a href="../editorial-project/editorial.html">editorial</a></li>
+            <li><a href="../the-cup/index.html">the cupe</a></li>
+        </ul>
+        <div class="main">
+            <!--style the HEADER element to be your favorite font from the exercise. Size it 120px -->
+            <header>Web Font Classifications</header>
+
+            <!--DIV is short for DIVISION. Think of it as an empty box for a group of content. Use the Serif DIV class for all of the serif font classifications. -->
+            <div class="serif">
+                <p id="oldstyle"><span class="fontname">Oldstyle Example</span>
+                <br>
+                <span class="fontfact">Resemble calligraphy (writing in ink).</span>
+                <br>    
+                <span class="fontfact bottom">Diagonal stress in the strokes.</span> </p>
+
+            </div>  <!-- This is the closing DIV tag-->  
+
+
+            <!-- ADD A DIV for the DIDONE example. 
+                    Fact 1: Very high contrast between thick and thin strokes.
+                    Fact 2: Vertical stress in the strokes.
+
+                ADD A DIV for the SLAB example. 
+                    Fact 1: Heavy "brick-like" serifs. 
+                    Fact 2: Imperceptible differences between stroke weights. -->
+
+            <div class="serif">
+                <p id="didone"><span class="fontname">Didone Example</span>
+                <br>
+                <span class="fontfact">Very high contrast between thick and thin strokes.</span>
+                <br>    
+                <span class="fontfact bottom">Vertical stress in the strokes.</span> </p>
+
+            </div> 
+
+            <div class="serif">
+                <p id="slab"><span class="fontname">Slab-serif Example</span>
+                <br>
+                <span class="fontfact">Heavy "brick-like" serifs.</span>
+                <br>    
+                <span class="fontfact bottom">Imperceptible differences between stroke weights.</span> </p>
+
+            </div> 
+
+            <!--Use the Sans DIV class for all of the sans-serif font classifications. -->
+            <div class="sans">
+                <p id="grotesque"><span class="fontname">Grotesque Example</span>
+                <br>
+                <span class="fontfact">Low contrast between thick and thin strokes.</span>
+                <br>    
+                <span class="fontfact bottom">Vertical or no observable stress.</span> </p>
+
+            </div>  <!-- This is the closing DIV tag-->  
+
+
+            <!-- ADD A DIV for the HUMANIST example. 
+                    Fact 1: Resemble calligraphy (writing in ink).
+                    Fact 2: Slanted stress.
+
+                ADD A DIV for the GEOMETRIC example. 
+                    Fact 1: Low contrast between thick and thin strokes.
+                    Fact 2: Vertical stress, and circular round forms. -->
+            <div class="sans">
+                <p id="humanist"><span class="fontname">Humanist Example</span>
+                <br>
+                <span class="fontfact">Resemble calligraphy (writing in ink).</span>
+                <br>    
+                <span class="fontfact bottom">Slanted stress.</span> </p>
+
+            </div>
+
+            <div class="sans">
+                <p id="geometric"><span class="fontname">Geometric Example</span>
+                <br>
+                <span class="fontfact">Low contrast between thick and thin strokes.</span>
+                <br>    
+                <span class="fontfact bottom">Vertical stress, and circular round forms.</span> </p>
+
+            </div>
+        </div>
+        
+    </body> <!-- This is the closing tag for the body element-->
+
+</html> <!-- This is the closing tag for the html element-->
+
+
+<!-- FINISHING THE EXERCISE
+1. change the color of all bottom-most "fontfact" text to white.
+2. change the color of the backgrounds to the serif and sans DIVs. Use the RGBA declaration method. One color per category. The colors need to contrast each other, and black and white need to be readable on that color.
+3. add minimum of 25px to bottom margin to SANS and SERIF DIVs
+4. add minimum of 10px to sides and bottom padding of SANS and SERIF DIVs
+
+-->

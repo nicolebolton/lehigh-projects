@@ -1,0 +1,429 @@
+/* GENERAL */
+body {
+  font-family: "Lato", sans-serif;
+/*    width: 90%;*/
+    margin: 0 auto;
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 11.089em;
+    letter-spacing: 10px;
+}
+
+h2 {
+    font-size: 4.236em;
+    font-family: 'Fredoka One', sans-serif;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+h3, p {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1em;
+}
+
+h4 {
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 1.618em;
+    letter-spacing: 2px;
+}
+
+/* NAVIGATION */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to left, rgba(255,0,0,0), rgba(58, 58, 58, 0.57));
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    padding: 0px 8px 6px 30px;
+    text-decoration: none;
+    font-size:  1em;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    font-size: 2.618em;
+    padding: 16px 8px 16px 32px;
+}
+
+.sidenav a:hover {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.company-name, .sidenav a.company-name {
+    font-family: 'Yellowtail', cursive;
+    text-transform: capitalize;
+}
+.sidenav a.company-name {
+    font-size: 4.236em;
+    padding-bottom: 0;
+    letter-spacing: 2px;
+}
+
+
+/* HOME SCREEN */
+
+#home {
+    width: 100vw;
+    position: fixed;
+    z-index: -1000;
+    
+}
+
+.home {
+    margin: 10vh;
+}
+
+#home h2, #home h1 {
+    margin: 0;
+}
+
+#home h2 {
+    color: #ba82a0;
+    padding-left: 30px;
+    padding-bottom: 6vh;
+}
+
+#home h3 {
+    text-align: center;
+    margin: 0;
+    padding-top: 5%;
+}
+
+#home img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.overlay {
+    height: 100vh;
+}
+
+.overlay a {
+    width: 100px; 
+    height: 45px; 
+    position: absolute; 
+    bottom: 8%;
+    left: 50%;
+    margin-left: -50px;
+}
+
+
+/* FLAVORS SECTION */
+.flavors {
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 30px;
+    max-width: 1200px;
+}
+
+.flavor-containers {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(225px, 1fr) );
+}
+
+.ice-cream-container {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(225px, 1fr) );
+}
+
+.ice-cream img{
+    width: 200px;
+}
+
+#flavors h4 {
+    margin: 10px 0;
+}
+
+.flavor-containers h3 {
+    opacity:0;
+    transition:0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+#rasp:hover + #rasp-dscr,  #mint:hover + #mint-dscr, #peach:hover + #peach-dscr, #nut:hover + #nut-dscr {
+    opacity:1;
+}
+
+
+/* MENU */
+#menu {
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.menu {
+    text-align: center;
+}
+
+.menu h2 {
+    line-height: 1em;
+}
+
+.menu h4 {
+    font-size: 2.618em;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.menu-item-container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.row-menu-items {
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
+    grid-row-gap: 30px;
+}
+
+table {
+    margin: 0;
+    width: 100%;
+    padding: 0 50px;
+}
+
+table.center {
+    padding: 0 30px;
+}
+
+table.center p{
+    text-align: center;
+}
+
+.menu-item p {
+    text-align: left;
+    margin: 0;
+    padding: 5px 0;
+    font-weight: 400;
+}
+
+p.price {
+    text-align: right;
+    font-weight: 900;
+}
+
+p.descr {
+    padding: 0;
+    padding-left: 2.5px;
+    text-transform: none;
+    font-size: 1em;
+    line-height: 1em;
+    letter-spacing: 1px;
+}
+
+
+/* ABOUT & CONTACT SECTION */
+.about {
+    padding: 60px 12% 65px 12%;
+    max-width: 1400px;
+}
+
+.about h2 {
+    line-height: 1.2em; 
+}
+
+.about h3 {
+    margin: 0;
+    font-weight: 900;
+}
+
+.about p {
+    text-transform: none;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
+    grid-gap: 10px;
+}
+
+.about-container img {
+    width:90%;
+    height: 240px;
+    margin-top: 20px; 
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.about-long {
+    width: 800px; 
+    margin-top: -10px;
+}
+
+.instagram-grid {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+    text-align: center;
+}
+
+.insta-img {
+    object-fit: cover;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* CONTACT SECTION */
+.contact {
+    text-align: center;
+    max-width: 1400px;
+    padding: 80px 30px;
+}
+
+.contact h4 {
+    margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        background-position:0 0px;
+    }
+    h1 {
+        line-height: 0.9em;
+    }
+    #home h2 {
+        padding-top: 50px;
+    }
+    #home h3 {
+        margin: 15vh 0 0 0;
+    }  
+    
+    #flavors h4 {
+        line-height: 1em;
+        height: 50px;
+        margin-top: 10px;
+    }
+    
+    #flavors h3 {
+        opacity:1;
+    }
+    
+    .ice-cream-container {
+        grid-row-gap: 20px;
+    }
+    
+    .menu-item-container {
+        margin: 0;
+    }
+    
+    .about {
+        padding: 70px;
+    } 
+
+    .about-container img {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .about-long {
+        width: auto; 
+        margin-top: 20px;
+    }
+    .instagram-grid {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    body {
+        background-position: 0 0;
+    }   
+    
+    h1 {
+        font-size: 11.089em;
+    }
+    
+    h2 {
+        font-size: 2.618em;
+    }
+    #home {
+        margin: 0;
+        margin-top: 100px;
+    }
+    
+    #home h2 {
+        padding: 70px 0 0 0;
+        text-align: center;
+    }
+    
+    #home h1 {
+        padding: 0;
+        text-align: center;
+        
+    }
+    #home h3 {
+        margin-top: 70px;
+    } 
+    #home img {
+        width: 75px;
+    }
+    .home {
+        margin: 0;
+    } 
+    
+    .ice-cream-container {
+        margin-bottom: 30px;
+        grid-row-gap: 30px;
+    }
+    
+    .menu-item-container h4{
+        font-size: 2.618em;
+    }
+    
+    table {
+        padding: 0: 30px;
+    }
+    
+    table.center {
+        padding: 0 20px;
+    }
+    
+    .about {
+        padding: 50px 30px;
+    } 
+    
+    .about-container {
+        grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    }
+    
+    .about-container img {
+        height: auto;
+        margin-top: 0;
+    }
+    .contact h3 {
+        margin: 5px;
+    }   
+}
