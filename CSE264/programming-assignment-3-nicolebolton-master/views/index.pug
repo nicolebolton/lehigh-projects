@@ -1,0 +1,48 @@
+extends layout
+
+block content
+  .ui.modal.startgame
+    .header
+      | Let's Play Blackjack
+    .description
+      h2 Welcome to Blackjack!
+      h4 Press Deal to Play...
+    .actions
+      #start-game.ui.positive.right.labeled.icon.button
+        | Deal!
+        i.checkmark.icon
+
+  header.blackjack
+    .game-title
+      h1 Blackjack
+      button#new-game.ui.button New Game
+
+  #dealer-hand-container
+    .dealer-hand
+    .dealer-score
+      h3 Dealer's Score
+      h1#dealer-score
+
+  .deck
+    img#card-pile(src="//cdn.shopify.com/s/files/1/0200/7616/products/playing-cards-bicycle-rider-back-1_1024x1024.png?v=1535755695")
+    .pile#pile
+
+  #player-hand-container
+    .play-buttons
+      button#hit.ui.button Hit
+      button#stay.ui.button Stay
+    .player-hand
+    .player-score
+      h3 Player's Score
+      h1#player-score 0
+
+
+  .ui.modal.gameover
+    #result.header
+      |
+    #result-description.description
+      h2
+    .actions
+      #play-again.ui.positive.right.labeled.icon.button
+        | Play Again!
+        i.checkmark.icon

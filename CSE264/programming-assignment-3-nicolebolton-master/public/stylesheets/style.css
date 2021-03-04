@@ -1,0 +1,155 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: green;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1, h3 {
+  color: white;
+}
+
+.ui.modal {
+  margin: 0 auto !important;
+  top: auto !important;
+  left: auto !important;
+  transform-origin: center !important;
+}
+
+.ui.modal h4 {
+  text-align: center;
+}
+
+.game-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+#new-game {
+  align-content: flex-end;
+}
+
+.description {
+  text-align: center;
+  padding: 5% 0;
+}
+
+.description h4 {
+  text-align: left;
+  padding: 0 10%
+}
+
+.deck {
+  height: 150px;
+  width: 107.95px;
+  margin-left: 50px;
+}
+
+.deck img{
+  height: 150px;
+  width: 107.95px;
+  position: absolute;
+  z-index: 10;
+}
+
+.pile {
+  width: 100%;
+  height: 100%;
+  perspective: 600px;
+}
+
+
+.card {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+#card-pile {
+  position: absolute;
+  height: 150px;
+  width: 107.95px;
+  z-index: -1;
+}
+
+.card-back, .card-face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.card-back {
+  z-index: 10;
+}
+
+.card-face {
+
+}
+
+.card-face img {
+  height: 100%;
+  width: 100%;
+}
+
+.card-back img {
+  height: 100%;
+  width: 100%;
+}
+
+#player-hand-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 75%;
+  height: 33%;
+  border-color: white;
+  margin: 0 auto;
+}
+
+.play-buttons {
+  align-self: center;
+}
+
+.player-score {
+  justify-content: left;
+  align-self: center;
+  margin-bottom: 4%;
+}
+
+.player-hand {
+  align-self: center;
+}
+
+.player-hand img {
+  height: 150px;
+  position: absolute;
+  transition: left 1s ease-out, top 1s ease-out;
+}
+
+#dealer-hand-container {
+  margin-left: 34.5%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 75%;
+  height: 33%;
+  border-color: white;
+}
+
+.dealer-score {
+  justify-content: right;
+}
+
+.dealer-hand {
+  display: inline-block;
+  align-self: flex-start;
+  height:150px;
+  margin-top: 5%;
+}
+
+.dealer-hand img {
+  height: 150px;
+}

@@ -1,0 +1,30 @@
+extends layout
+
+
+block content
+    script(src='/javascripts/saved.js')
+    .sidenav#mySidebar
+        img(src='assets/mango.png' id= 'user-img')
+        a(id='saved') Saved Recipes
+        a(id="logout") Logout
+
+    button.menu-toggle#menu(onclick='w3_open()') &#x2630;
+    .main
+      img(src='assets/MangoDB.png')
+      //p.content Find recipes from ingredients you already have in your fridge!
+      .search-result-container#result-container
+    script.
+      function w3_open() {
+          var menu = document.getElementById("menu")
+          if (document.getElementById("mySidebar").style.display === "block") {
+              document.getElementById("mySidebar").style.display = "none";
+              menu.style.background = "white";
+              menu.style.color = "#FFA07A";
+          }
+          else {
+              document.getElementById("mySidebar").style.display = "block";
+              menu.style.color = "white";
+              menu.style.background = "#FFA07A";
+          }
+
+      }

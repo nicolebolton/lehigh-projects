@@ -1,0 +1,30 @@
+extends layout
+
+block content
+    script(src='/javascripts/login.js')
+    body.login
+        .login-page
+            .form
+                .logo
+                    img(src='/assets/MangoDB.png')
+                .login-form
+                    input#user(type='text' placeholder='username')
+                    input#pass(type='password' placeholder='password')
+                    button#login-submit login
+                    p.message
+                        | Not registered?&nbsp
+                        a#create-account Create an account
+
+        .ui.modal.create
+            i.close.icon
+            .header
+                | Create Account
+            .description
+                form.register-form
+                    input#username(type='text' placeholder='username')
+                    input#password(type='password' placeholder='password')
+                    input#email(type='text' placeholder='email address')
+                    button#account-submit join
+                    p.message
+                        | Already registered?&nbsp
+                        a#sign-in Sign In
